@@ -12,6 +12,15 @@ echo "<br>";
 echo "<br>";
 echo "<br>";
 
+echo "<pre>";
+
+print_r($tablica_post);//prawy wyswietl źródło strony lepiej to wyglada
+
+echo "</pre>";
+
+
+
+
 //drukowanie indeksów tablicy post
 foreach ($tablica_post as $key => $value) {
     print $key.'<br>';
