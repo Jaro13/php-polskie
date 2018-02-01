@@ -1,11 +1,7 @@
 <?php
-//wyswietlanie bledow
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-ini_set('error_log',dirname(__FILE__).'/php-error.txt');
-//gdzie jest eduweb pdo - error log - zapisywanie daty wystąpienia błedu w logu?
-//formularze html. post zapisywanie danych
+
+require 'errors.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -79,6 +75,8 @@ ini_set('error_log',dirname(__FILE__).'/php-error.txt');
          //co jesli nie ma podaje wartosci dla tablicy GET?
          //jak to obsłużyc
          
+         
+
          if(!empty($_GET)){//to jest prawdłowe  isset - dlaczego nie działa to
              $strona = $_GET['strona'];//sprawdzić w pomocy
          
@@ -94,17 +92,49 @@ ini_set('error_log',dirname(__FILE__).'/php-error.txt');
          else {//jak obłsuzyć wpisanie czegoś innego poza 1,2,3
              echo 'inna strona';
          }
-         
 
-         echo "<hr>";
+        }
+        
+         //echo "<hr>";
 
          //die($strona);
 
-         }
+         
         //teraz href u goru kody  
          
          
-         
+         //teraz instukcja switch
+
+         echo "<br>";
+
+
+ /*
+
+        if (!empty($_GET)){
+
+            $strona=$_GET['strona'];
+
+            switch ($strona) {
+                case 1:
+                    echo "strona 1";
+                    break;
+                case 2:
+                    echo "strona 2";
+                    break;
+                case 3:
+                    echo "strona 3";
+                    break;
+                default:
+                echo "co za strona";
+
+            }
+
+            }
+        
+*/
+
+
+
          
          
          
