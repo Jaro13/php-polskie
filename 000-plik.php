@@ -28,9 +28,9 @@ ini_set('error_log',dirname(__FILE__).'/php-error.txt');
         -->
         
         
-        <a href="http://localhost/2017-php/php-polskie/000-plik.php?strona=1">strona 1</a>
-        <a href="http://localhost/2017-php/php-polskie/000-plik.php?strona=2">strona 2</a>
-        <a href="http://localhost/2017-php/php-polskie/000-plik.php?strona=3">strona 3</a>
+        <a href="http://localhost:8888/000-plik.php?strona=1">strona 1</a>
+        <a href="http://localhost:8888/000-plik.php?strona=2">strona 2</a>
+        <a href="http://localhost:8888/000-plik.php?strona=3">strona 3</a>
          <?php
         /*
          $strona = 1;
@@ -94,6 +94,12 @@ ini_set('error_log',dirname(__FILE__).'/php-error.txt');
          else {//jak obłsuzyć wpisanie czegoś innego poza 1,2,3
              echo 'inna strona';
          }
+         
+
+         echo "<hr>";
+
+         //die($strona);
+
          }
         //teraz href u goru kody  
          
